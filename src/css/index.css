@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+#VideoBlock{
+  width: 100%;
+  min-height: 300px;
+}
+.backVideoBlock{
+  background-color: #1A2238;
+  width: 100%;
+  min-height: 550px;
+  z-index: -999;
+  position: absolute;
+
+  box-shadow: 0 30px 20px 30px #1A2238;
+}
+.aboutUs{
+  width: 70%;
+  min-height: 100px;
+  margin: 0 auto;
+}
+.aboutUs h2{
+  margin-top: 0px;
+  padding-top: 15px;
+  color: #FDB73B;
+  font-size: 36px;
+  text-align: center;
+}
+.aboutUs p{
+  margin-top: -10px;
+  color: #FEFEFE;
+  text-align: center;
+}
+.video{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.videoAboutUs{
+  margin-top: 30px;
+}
+.pianoImg{
+  width: 100%;
+  min-height: 0px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 2px #FDB73B;
+}
+.playButton{
+  margin-top: 5px;
+  padding: 7px;
+  background-color: #FDB73B;
+  border-color: #1A2238;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+}
+.imgButtons{
+  margin-right: 5px;
+  margin-top: 1px;
+
+}
+.pause{
+  width: 20px;
+  height: 20px;
+}
+
+.ReactPlayer video{
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 2px #FDB73B;
+}
+
+
+
+.hiddenMusicBlock {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visibleMusicBlock {
+  opacity: 1;
+  transform: translateY(0);
+}
+#MusicBlock{
+  min-height: 300px;
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+}
+#MusicBlock h2{
+  color: #1A2238;
+  font-size: 150px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+
+  position: relative;
+  left: 0;
+  top: 0;
+  animation: move 20s linear infinite;
+}
+.musicBlock{
+  width: 80%;
+  margin: 0 auto;
+}
+@keyframes move {
+  0%{
+    transform: translateX(-100%)
+  }
+
+  100%{
+    transform: translateX(100%)
+  }
+}
+
+
+.blockMusicBlock{
+  border-radius: 10px;
+  width: 24%;
+  min-height: 430px;
+  background-color: #FDB73B;
+  box-shadow: 1px 1px 10px 1px #FDB73B;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-wrapper{
+  padding: 20px;
+  min-height: 80%;
+}
+.swiper-button-next{
+  width: 80px;
+  height: 50px;
+  background-color: #1A2238;
+  color: #FDB73B;
+  position: relative;
+  left: 120px;
+  top: -10px;
+  border: 2px solid #FDB73B;
+  border-radius: 10px;
+}
+.swiper-button-prev{
+  border-radius: 10px;
+  border: 2px solid #FDB73B;
+  width: 80px;
+  height: 50px;
+  background-color: #1A2238;
+  color: #FDB73B;
+  position: relative;
+  left: 30px;
+  top: 22px;
+}
+.blockMusicBlock h4{
+  text-align: center;
+  color: #1A2238;
+}
+.blockMusicBlock p{
+  padding: 5px;
+  text-align: center;
+  color: #1A2238;
+}
+.blockMusicBlock img{
+  width: 40%;
+  border-radius: 10px;
+  height: auto;
+  margin: 0 auto;
+}
